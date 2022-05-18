@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TestFrame.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="176">
+              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
@@ -33,8 +33,8 @@
       <file leaf-file-name="TankFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="230">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#407#561#0" expanded="true" />
@@ -244,12 +244,12 @@
       <updated>1652753859888</updated>
       <workItem from="1652753861727" duration="5682000" />
       <workItem from="1652769641469" duration="37000" />
-      <workItem from="1652831606407" duration="1833000" />
+      <workItem from="1652831606407" duration="1947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7552000" />
+    <option name="totallyTimeSpent" value="7666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -264,12 +264,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2414966" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06632653" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22919819" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.22919819" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Structure" order="8" side_tool="true" weight="0.24931756" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24931756" />
@@ -289,10 +289,10 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06632653" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24931756" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22919819" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22919819" />
       <window_info anchor="right" id="Structure" order="8" side_tool="true" weight="0.24931756" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -393,8 +393,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="176">
+          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#228#229#0" expanded="true" />
@@ -405,8 +405,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="230">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#407#561#0" expanded="true" />
