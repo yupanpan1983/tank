@@ -14,6 +14,7 @@ public class TankFrame extends Frame {
 
     int x = 200,y=200;
 
+
     public TankFrame(){
         setTitle("tank war");
         setSize(800,600);
@@ -34,21 +35,41 @@ public class TankFrame extends Frame {
     public void paint(Graphics g) {
 //        System.out.println("paint");
         g.fillRect(x,y,50,50);
-        x += 50;
+//        x += 10;
 //        y += 50;
     }
 
     class MyListener extends KeyAdapter{
+
+        boolean bL = false;
+        boolean bU = false;
+        boolean bR = false;
+        boolean bD = false;
         @Override
         public void keyPressed(KeyEvent e) {
 //            System.out.println("pressed");
-//              x += 50;
-//              repaint();
+            int key = e.getKeyCode();
+            switch(key){
+                case KeyEvent.VK_LEFT:
+                    bL = true;
+                    break;
+                case KeyEvent.VK_UP:
+                    bU = true;
+                    break;
+                case KeyEvent.VK_RIGHT:
+                    bR = true;
+                    break;
+                case KeyEvent.VK_DOWN:
+                    bD = true;
+                    break;
+                    default:
+                        break;
+            }
         }
 
         @Override
         public void keyReleased(KeyEvent e) {
-            System.out.println("released");
+//            System.out.println("released");
         }
     }
 }
