@@ -13,6 +13,7 @@ import java.awt.event.WindowEvent;
 public class TankFrame extends Frame {
 
     Tank myTank = new Tank(200,200,Dir.DOWN);
+    Bullet b = new Bullet(300,300,Dir.DOWN);
 
     public TankFrame(){
         setTitle("tank war");
@@ -20,7 +21,7 @@ public class TankFrame extends Frame {
         setResizable(false);
         setVisible(true);
 
-        this.addKeyListener(new MyListener());
+        this.addKeyListener(new MyKeyListener());
 
         addWindowListener(new WindowAdapter() {
             @Override
@@ -34,10 +35,11 @@ public class TankFrame extends Frame {
     public void paint(Graphics g) {
 
         myTank.paint(g);
+        b.paint(g);
 
     }
 
-    class MyListener extends KeyAdapter{
+    class MyKeyListener extends KeyAdapter{
 
         boolean bL = false;
         boolean bU = false;
@@ -45,8 +47,6 @@ public class TankFrame extends Frame {
         boolean bD = false;
         @Override
         public void keyPressed(KeyEvent e) {
-            myTank.setMoving(true);
-
             int key = e.getKeyCode();
             switch(key){
                 case KeyEvent.VK_LEFT:
@@ -93,14 +93,20 @@ public class TankFrame extends Frame {
         }
 
         private void setMainTankDir() {
-            if(bL)  myTank.setDir(Dir.LEFT);
-            if(bU)  myTank.setDir(Dir.UP);
-            if(bR)  myTank.setDir(Dir.RIGHT);
-            if(bD)  myTank.setDir(Dir.DOWN);
-
             if(!bL && !bU && !bR && !bD) myTank.setMoving(false);
+            else {
+                myTank.setMoving(true);
+
+                if (bL) myTank.setDir(Dir.LEFT);
+                if (bU) myTank.setDir(Dir.UP);
+                if (bR) myTank.setDir(Dir.RIGHT);
+                if (bD) myTank.setDir(Dir.DOWN);
+            }
+
         }
     }
 
 
 }
+
+

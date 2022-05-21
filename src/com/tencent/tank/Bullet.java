@@ -2,45 +2,30 @@ package com.tencent.tank;
 
 import java.awt.*;
 
-public class Tank {
+public class Bullet {
 
     private int x,y;
+    private static final int SPEED = 1;
     private Dir dir;
-    private static final int SPEED = 5;
+    static final int WIDTH = 30,HEIGHT = 30;
 
-    private boolean moving = false;
-
-    public Tank(int x,int y,Dir dir){
+    public Bullet(int x,int y,Dir dir){
         this.x = x;
         this.y = y;
         this.dir = dir;
     }
 
-    public boolean isMoving() {
-        return moving;
-    }
-
-    public void setMoving(boolean moving) {
-        this.moving = moving;
-    }
-
-    public Dir getDir() {
-        return dir;
-    }
-
-    public void setDir(Dir dir) {
-        this.dir = dir;
-    }
-
     public void paint(Graphics g){
-        g.fillRect(x,y,50,50);
+        Color c = g.getColor();
+        g.setColor(Color.RED);
+        g.fillOval(x,y,WIDTH,HEIGHT);
+        g.setColor(c);
 
         move();
+
     }
 
     public void move(){
-        if(!moving) return;
-
         switch(dir){
             case LEFT:
                 x -= SPEED;
