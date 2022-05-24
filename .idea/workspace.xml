@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/ResourceMgr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/ResourceMgr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/ResourceMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +193,7 @@
       <workItem from="1653088108509" duration="11921000" />
       <workItem from="1653364027732" duration="235000" />
       <workItem from="1653373541819" duration="6401000" />
-      <workItem from="1653384061803" duration="3008000" />
+      <workItem from="1653384061803" duration="3673000" />
     </task>
     <servers />
   </component>
