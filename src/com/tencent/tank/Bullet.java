@@ -31,7 +31,6 @@ public class Bullet {
         g.setColor(c);
 
         move();
-
     }
 
     public void move(){

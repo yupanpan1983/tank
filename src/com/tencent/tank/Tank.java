@@ -1,5 +1,6 @@
 package com.tencent.tank;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
 
 public class Tank {
