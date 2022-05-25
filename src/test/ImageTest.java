@@ -1,8 +1,5 @@
 package test;
 
-
-
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -33,5 +30,4 @@ public class ImageTest {
 //        Assertions.fail("这是一个测试未通过的小案例！");
 //        Assertions.assertNotNull(new String());
     }
-
 }
