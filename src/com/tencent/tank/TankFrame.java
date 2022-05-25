@@ -19,6 +19,8 @@ public class TankFrame extends Frame {
     Tank myTank = new Tank(200,400,Dir.DOWN,Group.GOOD,this);
     List<Bullet> bullets = new ArrayList<>();
     List<Tank> enemiesTank = new ArrayList<>();
+    Explode e = new Explode(100,100,this);
+
     static final int GAME_WIDTH = 800,GAME_HEIGHT = 600;
 
     public TankFrame(){
@@ -62,6 +64,7 @@ public class TankFrame extends Frame {
         g.setColor(c);
 
         myTank.paint(g);
+        e.paint(g);
 
         for (int i = 0; i < bullets.size(); i++) {
             bullets.get(i).paint(g);
