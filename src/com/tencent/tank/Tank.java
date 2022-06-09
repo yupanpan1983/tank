@@ -8,15 +8,15 @@ public class Tank {
 
     private int x,y;
     private Dir dir;
-    private static final int SPEED = 1;
+    private static final int SPEED = 6;
 
     private boolean moving = true;
     private boolean living = true;
 
     private Random random = new Random();
 
-    public static final int WIDTH = ResourceMgr.tankL.getWidth();
-    public static final int HEIGHT = ResourceMgr.tankL.getHeight();
+    public static final int WIDTH = ResourceMgr.badTankU.getWidth();
+    public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
     TankFrame tf = null;
     private Group group = Group.BAD;
@@ -76,16 +76,16 @@ public class Tank {
 
         switch (dir){
             case LEFT:
-                g.drawImage(ResourceMgr.tankL,x,y,null);
+                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankL : ResourceMgr.goodTankL,x,y,null);
                 break;
             case UP:
-                g.drawImage(ResourceMgr.tankU,x,y,null);
+                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankU : ResourceMgr.goodTankU,x,y,null);
                 break;
             case RIGHT:
-                g.drawImage(ResourceMgr.tankR,x,y,null);
+                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankR : ResourceMgr.goodTankR,x,y,null);
                 break;
             case DOWN:
-                g.drawImage(ResourceMgr.tankD,x,y,null);
+                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankD : ResourceMgr.goodTankD,x,y,null);
                 break;
         }
 
@@ -122,6 +122,10 @@ public class Tank {
         int bX = this.x + WIDTH/2 -Bullet.WIDTH/2;
         int bY = this.y + HEIGHT/2 - Bullet.HEIGHT/2;
         tf.bullets.add(new Bullet(bX,bY,this.dir,this.group,this.tf));
+
+        if(this.group == Group.GOOD){
+            new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
+        }
     }
 
     public void die() {

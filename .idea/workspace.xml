@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/ImageUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ImageRotateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/ResourceMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/ResourceMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tank.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/tencent/tank" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -54,14 +66,17 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.tencent.tank" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_workspace\tank\src\com\tencent\tank" />
+      <recent name="D:\idea_workspace\tank\src\audio" />
+      <recent name="D:\idea_workspace\tank\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test" />
       <recent name="com.tencent.tank" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\idea_workspace\tank\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tencent.tank" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,8 +92,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tencent.tank.Main" />
+    <configuration name="Audio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tencent.tank.Audio" />
       <module name="tank" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -91,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tencent.tank.TestFrame" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tencent.tank.Main" />
       <module name="tank" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -111,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ImageRotateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tank" />
       <extension name="coverage">
         <pattern>
@@ -120,8 +135,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.ImageTest" />
+      <option name="MAIN_CLASS_NAME" value="test.ImageRotateTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageRotateTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.ImageRotateTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,16 +194,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.TestFrame" />
-      <item itemvalue="JUnit.ImageTest" />
       <item itemvalue="JUnit.ImageTest.test" />
+      <item itemvalue="Application.Audio" />
+      <item itemvalue="JUnit.ImageRotateTest.test" />
+      <item itemvalue="JUnit.ImageRotateTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ImageRotateTest.test" />
+        <item itemvalue="Application.Audio" />
+        <item itemvalue="JUnit.ImageRotateTest" />
         <item itemvalue="JUnit.ImageTest.test" />
-        <item itemvalue="JUnit.ImageTest" />
-        <item itemvalue="Application.TestFrame" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +230,16 @@
       <workItem from="1653373541819" duration="6401000" />
       <workItem from="1653384061803" duration="4159000" />
       <workItem from="1653436848969" duration="5753000" />
-      <workItem from="1653460105718" duration="6706000" />
+      <workItem from="1653460105718" duration="7211000" />
+      <workItem from="1653525166331" duration="2451000" />
+      <workItem from="1653534895679" duration="2355000" />
+      <workItem from="1653552182600" duration="6445000" />
+      <workItem from="1653613216621" duration="605000" />
+      <workItem from="1653637781843" duration="56000" />
+      <workItem from="1654559929137" duration="10561000" />
+      <workItem from="1654588167231" duration="328000" />
+      <workItem from="1654648250702" duration="84000" />
+      <workItem from="1654763876232" duration="749000" />
     </task>
     <servers />
   </component>

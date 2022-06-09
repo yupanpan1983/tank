@@ -5,7 +5,7 @@ import java.awt.*;
 public class Bullet {
 
     private int x,y;
-    private static final int SPEED = 10;
+    private static final int SPEED = 15;
     private Dir dir;
 
     public static final int WIDTH = ResourceMgr.bulletL.getWidth();

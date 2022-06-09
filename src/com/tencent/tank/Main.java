@@ -15,8 +15,9 @@ public class Main {
         TankFrame tf = new TankFrame();
 
         for(int i = 0;i<5;i++){
-             tf.enemiesTank.add(new Tank((50 + 50*i),200,Dir.DOWN,Group.BAD,tf));
+             tf.enemiesTank.add(new Tank((50 + 80*i),200,Dir.DOWN,Group.BAD,tf));
         }
+        new Thread(()->new Audio("audio/war1.wav").loop()).start();
 
         while(true){
             Thread.sleep(50);
