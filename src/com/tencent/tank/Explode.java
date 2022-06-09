@@ -28,6 +28,7 @@ public class Explode {
 
         if(step >= ResourceMgr.explodes.length){
             step = 0;
+            tf.explodes.remove(this);
         }
 
     }
