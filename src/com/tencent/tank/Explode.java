@@ -9,7 +9,7 @@ public class Explode {
     public static final int WIDTH = ResourceMgr.explodes[0].getWidth();
     public static final int HEIGHT = ResourceMgr.explodes[0].getHeight();
 
-    private boolean living = true;
+//    private boolean living = true;
     private static int step = 0;
 
     TankFrame tf = null;
