@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,8 +181,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ImageTest.test" />
       <item itemvalue="Application.Audio" />
+      <item itemvalue="JUnit.ImageTest.test" />
       <item itemvalue="JUnit.ImageRotateTest.test" />
       <item itemvalue="JUnit.ImageRotateTest" />
     </list>
@@ -226,7 +226,8 @@
       <workItem from="1654559929137" duration="10561000" />
       <workItem from="1654588167231" duration="328000" />
       <workItem from="1654648250702" duration="84000" />
-      <workItem from="1654763876232" duration="2214000" />
+      <workItem from="1654763876232" duration="2350000" />
+      <workItem from="1654818089715" duration="4373000" />
     </task>
     <servers />
   </component>
