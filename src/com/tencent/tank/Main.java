@@ -14,8 +14,10 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         TankFrame tf = new TankFrame();
 
-        for(int i = 0;i<5;i++){
-             tf.enemiesTank.add(new Tank((50 + 80*i),200,Dir.DOWN,Group.BAD,tf));
+        int initTankCount = Integer.valueOf((String)PropertyMgr.get("initTankCount"));
+
+        for(int i = 0;i<initTankCount;i++){
+            tf.enemiesTank.add(new Tank((50 + 80*i),200,Dir.DOWN,Group.BAD,tf));
         }
         new Thread(()->new Audio("audio/war1.wav").loop()).start();
 
