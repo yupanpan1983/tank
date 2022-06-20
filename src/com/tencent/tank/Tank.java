@@ -2,12 +2,13 @@ package com.tencent.tank;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
 public class Tank {
 
-    private int x,y;
-    private Dir dir;
+    int x,y;
+    Dir dir;
     private static final int SPEED = 6;
 
     private boolean moving = true;
@@ -19,9 +20,11 @@ public class Tank {
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
     TankFrame tf = null;
-    private Group group = Group.BAD;
+    Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
+
+    FireStrategy fs = null;
 
     public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
         this.x = x;
@@ -34,6 +37,28 @@ public class Tank {
         rect.y = y;
         rect.width = WIDTH;
         rect.height = HEIGHT;
+
+        if(this.group == Group.GOOD){
+            String goodFS = (String)PropertyMgr.get("goodFS");
+
+            //JDK1.9之后不推荐使用newInstance()
+//                fs = (FourDirFireStrategy)Class.forName(goodFS).newInstance();
+            try {
+                fs = (FourDirFireStrategy)Class.forName(goodFS).getDeclaredConstructor().newInstance();
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }else{
+            fs = new DefaultFireStrategy();
+        }
     }
 
     public Group getGroup() {
@@ -154,13 +179,7 @@ public class Tank {
 
 
     public void fire() {
-        int bX = this.x + WIDTH/2 -Bullet.WIDTH/2;
-        int bY = this.y + HEIGHT/2 - Bullet.HEIGHT/2;
-        tf.bullets.add(new Bullet(bX,bY,this.dir,this.group,this.tf));
-
-        if(this.group == Group.GOOD){
-            new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
-        }
+        fs.fire(this);
     }
 
     public void die() {

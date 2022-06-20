@@ -4,3 +4,6 @@ tankSpeed=6
 bulletSpeed=15
 gameWidth=1080
 gameHeight=960
+#fireStrategy
+goodFS=com.tencent.tank.FourDirFireStrategy
+badFS=com.tencent.tank.DefaultFireStrategy
