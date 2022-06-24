@@ -1,8 +1,10 @@
 package com.tencent.tank;
 
+import com.tencent.tank.abstractfactory.BaseExplode;
+
 import java.awt.*;
 
-public class Explode {
+public class Explode extends BaseExplode {
 
     private int x,y;
 
@@ -22,6 +24,7 @@ public class Explode {
         new Thread(()->new Audio("audio/explode.wav").play()).start();
     }
 
+    @Override
     public void paint(Graphics g){
 
         g.drawImage(ResourceMgr.explodes[step++],this.x,this.y,null);

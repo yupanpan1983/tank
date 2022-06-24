@@ -1,11 +1,17 @@
-package com.tencent.tank;
+package com.tencent.tank.abstractfactory;
 
-import com.tencent.tank.abstractfactory.BaseBullet;
-import com.tencent.tank.abstractfactory.BaseTank;
+import com.tencent.tank.*;
 
 import java.awt.*;
 
-public class Bullet extends BaseBullet {
+/**
+ * @Auther: Yu Panpan
+ * @Date: 2022/6/24 - 06 - 24 - 10:24
+ * @Description: com.tencent.tank.abstractfactory
+ * @version: 1.0
+ */
+public class RectBullet extends BaseBullet {
+
 
     private int x,y;
     private static final int SPEED = 15;
@@ -19,9 +25,9 @@ public class Bullet extends BaseBullet {
     TankFrame tf = null;
     private Group group = Group.BAD;
 
-    Rectangle rect = new Rectangle();
+    public Rectangle rect = new Rectangle();
 
-    public Bullet(int x,int y,Dir dir,Group group,TankFrame tf){
+    public RectBullet(int x,int y,Dir dir,Group group,TankFrame tf){
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -50,20 +56,10 @@ public class Bullet extends BaseBullet {
             tf.bullets.remove(this);
         }
 
-        switch (dir){
-            case LEFT:
-                g.drawImage(ResourceMgr.bulletL,x,y,null);
-                break;
-            case UP:
-                g.drawImage(ResourceMgr.bulletU,x,y,null);
-                break;
-            case RIGHT:
-                g.drawImage(ResourceMgr.bulletR,x,y,null);
-                break;
-            case DOWN:
-                g.drawImage(ResourceMgr.bulletD,x,y,null);
-                break;
-        }
+        Color c = g.getColor();
+        g.setColor(Color.RED);
+        g.fillRect(x,y,15,15);
+        g.setColor(c);
 
         move();
     }
@@ -103,7 +99,7 @@ public class Bullet extends BaseBullet {
         if(rect.intersects(tank.rect)){
             tank.die();
             this.die();
-            int eX = tank.getX() + Tank.WIDTH/2 -Explode.WIDTH/2;
+            int eX = tank.getX() + Tank.WIDTH/2 - Explode.WIDTH/2;
             int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
             tf.explodes.add(tf.gf.createExplode(eX,eY,tf));
         }

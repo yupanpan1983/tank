@@ -1,13 +1,18 @@
-package com.tencent.tank;
+package com.tencent.tank.abstractfactory;
 
-import com.tencent.tank.abstractfactory.BaseTank;
+import com.tencent.tank.*;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public class Tank extends BaseTank {
+/**
+ * @Auther: Yu Panpan
+ * @Date: 2022/6/24 - 06 - 24 - 11:08
+ * @Description: com.tencent.tank.abstractfactory
+ * @version: 1.0
+ */
+public class RectTank extends BaseTank {
 
     int x,y;
     Dir dir;
@@ -25,7 +30,7 @@ public class Tank extends BaseTank {
 
     FireStrategy fs = null;
 
-    public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
+    public RectTank(int x,int y,Dir dir,Group group,TankFrame tf){
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -64,7 +69,6 @@ public class Tank extends BaseTank {
         this.group = group;
     }
 
-    @Override
     public int getX() {
         return x;
     }
@@ -73,7 +77,6 @@ public class Tank extends BaseTank {
         this.x = x;
     }
 
-    @Override
     public int getY() {
         return y;
     }
@@ -104,20 +107,10 @@ public class Tank extends BaseTank {
             tf.enemiesTank.remove(this);
         }
 
-        switch (dir){
-            case LEFT:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankL : ResourceMgr.goodTankL,x,y,null);
-                break;
-            case UP:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankU : ResourceMgr.goodTankU,x,y,null);
-                break;
-            case RIGHT:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankR : ResourceMgr.goodTankR,x,y,null);
-                break;
-            case DOWN:
-                g.drawImage(this.group == Group.BAD ? ResourceMgr.badTankD : ResourceMgr.goodTankD,x,y,null);
-                break;
-        }
+        Color c = g.getColor();
+        g.setColor(this.group == Group.GOOD ? Color.GREEN : Color.yellow);
+        g.fillRect(x,y,40,40);
+        g.setColor(c);
 
         move();
     }
@@ -189,7 +182,6 @@ public class Tank extends BaseTank {
         }
     }
 
-    @Override
     public void die() {
         this.living = false;
     }

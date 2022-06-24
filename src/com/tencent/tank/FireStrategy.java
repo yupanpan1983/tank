@@ -1,5 +1,7 @@
 package com.tencent.tank;
 
+import com.tencent.tank.abstractfactory.BaseTank;
+
 /**
  * @Auther: Yu Panpan
  * @Date: 2022/6/15 - 06 - 15 - 9:11
