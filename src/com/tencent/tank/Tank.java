@@ -1,13 +1,11 @@
 package com.tencent.tank;
 
-import com.tencent.tank.abstractfactory.BaseTank;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public class Tank extends BaseTank {
+public class Tank {
 
     int x,y;
     Dir dir;
@@ -21,7 +19,10 @@ public class Tank extends BaseTank {
     public static final int WIDTH = ResourceMgr.badTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
-    public TankFrame tf = null;
+    TankFrame tf = null;
+    Group group = Group.BAD;
+
+    Rectangle rect = new Rectangle();
 
     FireStrategy fs = null;
 
@@ -60,11 +61,14 @@ public class Tank extends BaseTank {
         }
     }
 
+    public Group getGroup() {
+        return group;
+    }
+
     public void setGroup(Group group) {
         this.group = group;
     }
 
-    @Override
     public int getX() {
         return x;
     }
@@ -73,7 +77,6 @@ public class Tank extends BaseTank {
         this.x = x;
     }
 
-    @Override
     public int getY() {
         return y;
     }
@@ -98,7 +101,6 @@ public class Tank extends BaseTank {
         this.dir = dir;
     }
 
-    @Override
     public void paint(Graphics g){
         if(!living){
             tf.enemiesTank.remove(this);
@@ -177,19 +179,9 @@ public class Tank extends BaseTank {
 
 
     public void fire() {
-        int bX = this.x + Tank.WIDTH/2 - Bullet.WIDTH/2;
-        int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
-        for(Dir dir : Dir.values()){
-//            new Bullet(bX,bY,dir,t.group,t.tf);
-            this.tf.gf.createBullet(bX,bY,dir,this.group,this.tf);
-        }
-
-        if(this.group == Group.GOOD){
-            new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
-        }
+        fs.fire(this);
     }
 
-    @Override
     public void die() {
         this.living = false;
     }

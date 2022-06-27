@@ -1,7 +1,5 @@
 package com.tencent.tank;
 
-import com.tencent.tank.abstractfactory.*;
-
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -19,13 +17,11 @@ import java.util.List;
 public class TankFrame extends Frame {
 
     Tank myTank = new Tank(200,400,Dir.DOWN,Group.GOOD,this);
-    public List<BaseBullet> bullets = new ArrayList<>();
-    public List<BaseTank> enemiesTank = new ArrayList<>();
-    public List<BaseExplode> explodes = new ArrayList<>();
+    List<Bullet> bullets = new ArrayList<>();
+    List<Tank> enemiesTank = new ArrayList<>();
+    List<Explode> explodes = new ArrayList<>();
 
-    public GameFactory gf = new RectFactory();
-
-    public static final int GAME_WIDTH = 1080,GAME_HEIGHT = 960;
+    static final int GAME_WIDTH = 1080,GAME_HEIGHT = 960;
 
     public TankFrame(){
         setTitle("tank war");

@@ -1,7 +1,5 @@
 package com.tencent.tank;
 
-import com.tencent.tank.abstractfactory.BaseTank;
-
 /**
  * @Auther: Yu Panpan
  * @Date: 2022/6/15 - 06 - 15 - 9:14
@@ -14,8 +12,7 @@ public class FourDirFireStrategy implements FireStrategy {
         int bX = t.x + Tank.WIDTH/2 - Bullet.WIDTH/2;
         int bY = t.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
         for(Dir dir : Dir.values()){
-//            new Bullet(bX,bY,dir,t.group,t.tf);
-              t.tf.gf.createBullet(bX,bY,dir,t.group,t.tf);
+            new Bullet(bX,bY,dir,t.group,t.tf);
         }
 
         if(t.group == Group.GOOD){
