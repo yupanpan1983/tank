@@ -19,19 +19,20 @@ public class Tank {
     public static final int WIDTH = ResourceMgr.badTankU.getWidth();
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
 
-    TankFrame tf = null;
     Group group = Group.BAD;
 
     Rectangle rect = new Rectangle();
 
     FireStrategy fs = null;
 
-    public Tank(int x,int y,Dir dir,Group group,TankFrame tf){
+    GameModel gm;
+
+    public Tank(int x,int y,Dir dir,Group group,GameModel gm){
         this.x = x;
         this.y = y;
         this.dir = dir;
         this.group = group;
-        this.tf = tf;
+        this.gm = gm;
 
         rect.x = x;
         rect.y = y;
@@ -103,7 +104,7 @@ public class Tank {
 
     public void paint(Graphics g){
         if(!living){
-            tf.enemiesTank.remove(this);
+            gm.enemiesTank.remove(this);
         }
 
         switch (dir){
