@@ -2,7 +2,7 @@ package com.tencent.tank;
 
 import java.awt.*;
 
-public class Explode {
+public class Explode extends GameObject {
 
     private int x,y;
 
@@ -22,13 +22,14 @@ public class Explode {
         new Thread(()->new Audio("audio/explode.wav").play()).start();
     }
 
+    @Override
     public void paint(Graphics g){
 
         g.drawImage(ResourceMgr.explodes[step++],this.x,this.y,null);
 
         if(step >= ResourceMgr.explodes.length){
             step = 0;
-            gm.explodes.remove(this);
+            gm.objects.remove(this);
         }
 
     }

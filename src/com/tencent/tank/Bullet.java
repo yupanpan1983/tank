@@ -2,24 +2,18 @@ package com.tencent.tank;
 
 import java.awt.*;
 
-public class Bullet {
-
-    private int x,y;
-    private static final int SPEED = 15;
-    private Dir dir;
+public class Bullet extends GameObject {
 
     public static final int WIDTH = ResourceMgr.bulletL.getWidth();
     public static final int HEIGHT = ResourceMgr.bulletL.getHeight();
-
-    private boolean living = true;
-
-    private Group group = Group.BAD;
-
+    private static final int SPEED = 15;
     Rectangle rect = new Rectangle();
-
     GameModel gm;
-
-    public Bullet(int x,int y,Dir dir,Group group,GameModel gm){
+    private int x, y;
+    private Dir dir;
+    private boolean living = true;
+    private Group group = Group.BAD;
+    public Bullet(int x, int y, Dir dir, Group group, GameModel gm) {
         this.x = x;
         this.y = y;
         this.dir = dir;
@@ -31,7 +25,15 @@ public class Bullet {
         rect.width = WIDTH;
         rect.height = HEIGHT;
 
-        gm.bullets.add(this);
+        gm.objects.add(this);
+    }
+
+    public GameModel getGm() {
+        return gm;
+    }
+
+    public Rectangle getRect() {
+        return rect;
     }
 
     public Group getGroup() {
@@ -42,31 +44,32 @@ public class Bullet {
         this.group = group;
     }
 
-    public void paint(Graphics g){
-        if(!living){
-            gm.bullets.remove(this);
+    @Override
+    public void paint(Graphics g) {
+        if (!living) {
+            gm.objects.remove(this);
         }
 
-        switch (dir){
+        switch (dir) {
             case LEFT:
-                g.drawImage(ResourceMgr.bulletL,x,y,null);
+                g.drawImage(ResourceMgr.bulletL, x, y, null);
                 break;
             case UP:
-                g.drawImage(ResourceMgr.bulletU,x,y,null);
+                g.drawImage(ResourceMgr.bulletU, x, y, null);
                 break;
             case RIGHT:
-                g.drawImage(ResourceMgr.bulletR,x,y,null);
+                g.drawImage(ResourceMgr.bulletR, x, y, null);
                 break;
             case DOWN:
-                g.drawImage(ResourceMgr.bulletD,x,y,null);
+                g.drawImage(ResourceMgr.bulletD, x, y, null);
                 break;
         }
 
         move();
     }
 
-    public void move(){
-        switch(dir){
+    public void move() {
+        switch (dir) {
             case LEFT:
                 x -= SPEED;
                 break;
@@ -86,27 +89,12 @@ public class Bullet {
         rect.x = this.x;
         rect.y = this.y;
 
-        if(x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT){
+        if (x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT) {
             living = false;
         }
     }
 
-
-    public void collideWith(Tank tank) {
-        if(this.group == tank.getGroup()){
-            return;
-        }
-
-        if(rect.intersects(tank.rect)){
-            tank.die();
-            this.die();
-            int eX = tank.getX() + Tank.WIDTH/2 -Explode.WIDTH/2;
-            int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-            gm.explodes.add(new Explode(eX,eY,gm));
-        }
-    }
-
-    private void die() {
+    public void die() {
         this.living = false;
     }
 }

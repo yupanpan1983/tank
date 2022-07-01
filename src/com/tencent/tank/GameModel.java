@@ -1,44 +1,48 @@
 package com.tencent.tank;
 
+import com.tencent.tank.cor.BulletTankCollider;
+import com.tencent.tank.cor.Collider;
+
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class GameModel {
 
     Tank myTank = new Tank(200,400,Dir.DOWN,Group.GOOD,this);
-    List<Bullet> bullets = new ArrayList<>();
-    List<Tank> enemiesTank = new ArrayList<>();
-    List<Explode> explodes = new ArrayList<>();
+
+    public List<GameObject> objects = new ArrayList<>();
+
+    Collider collider1 = new BulletTankCollider();
 
     public GameModel(){
         int initTankCount = Integer.valueOf((String)PropertyMgr.get("initTankCount"));
 
         for(int i = 0;i<initTankCount;i++){
-            enemiesTank.add(new Tank((50 + 80*i),200,Dir.DOWN,Group.BAD,this));
+            objects.add(new Tank((50 + 80*i),200,Dir.DOWN,Group.BAD,this));
         }
     }
 
     public void paint(Graphics g){
         myTank.paint(g);
 
-        for (int i = 0; i < bullets.size(); i++) {
-            bullets.get(i).paint(g);
+        for (int i = 0; i < objects.size(); i++) {
+            objects.get(i).paint(g);
         }
 
-        for(int i = 0;i <enemiesTank.size();i++){
-            enemiesTank.get(i).paint(g);
-        }
+        for (int i = 0; i < objects.size(); i++) {
+            for (int j = i+1; j < objects.size() ; j++) {
+                GameObject o1 = objects.get(i);
+                GameObject o2 = objects.get(j);
+//                o1.collideWith(o2);
+                //comparator.compara(o1,o2)
+                collider1.collide(o1,o2);
 
-        for(int i = 0;i <explodes.size();i++){
-            explodes.get(i).paint(g);
-        }
 
-        for(int i = 0; i<bullets.size();i++){
-            for(int j = 0;j<enemiesTank.size();j++){
-                bullets.get(i).collideWith(enemiesTank.get(j));
             }
         }
+
 
     }
 

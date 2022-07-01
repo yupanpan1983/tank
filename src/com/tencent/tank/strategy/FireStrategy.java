@@ -1,4 +1,6 @@
-package com.tencent.tank;
+package com.tencent.tank.strategy;
+
+import com.tencent.tank.Tank;
 
 /**
  * @Auther: Yu Panpan
