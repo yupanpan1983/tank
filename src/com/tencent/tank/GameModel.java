@@ -2,6 +2,7 @@ package com.tencent.tank;
 
 import com.tencent.tank.cor.BulletTankCollider;
 import com.tencent.tank.cor.Collider;
+import com.tencent.tank.cor.TankTankCollider;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ public class GameModel {
     public List<GameObject> objects = new ArrayList<>();
 
     Collider collider1 = new BulletTankCollider();
+    Collider collider2 = new TankTankCollider();
 
     public GameModel(){
         int initTankCount = Integer.valueOf((String)PropertyMgr.get("initTankCount"));
@@ -38,12 +40,9 @@ public class GameModel {
 //                o1.collideWith(o2);
                 //comparator.compara(o1,o2)
                 collider1.collide(o1,o2);
-
-
+                collider2.collide(o1,o2);
             }
         }
-
-
     }
 
     public Tank getMainTank(){

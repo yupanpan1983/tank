@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f4d541f-1b93-4c37-8c10-953eaaec92d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/cor/BulletTankCollider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/cor/Collider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/DefaultFireStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Explode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/FireStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/FourDirFireStrategy.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/GameModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/GameModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/Tank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/TankFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/config" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/DefaultFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/strategy/DefaultFireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/FireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/strategy/FireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/FourDirFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/strategy/FourDirFireStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/cor/TankTankCollider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/tencent/tank/cor/TankTankCollider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/GameModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config" beforeDir="false" afterPath="$PROJECT_DIR$/src/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,12 +39,14 @@
       <file leaf-file-name="Tank.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#793#794#0" expanded="true" />
                 <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#4801#4802#0" expanded="true" />
+                <element signature="e#4835#4836#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +64,8 @@
       <file leaf-file-name="GameModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/GameModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+            <state relative-caret-position="308">
+              <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BulletTankCollider.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BulletTankCollider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/cor/BulletTankCollider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="176">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,11 +94,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankTankCollider.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TankTankCollider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="264">
+              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +109,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+            <state relative-caret-position="108">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -171,11 +159,11 @@
         <option value="$PROJECT_DIR$/src/com/tencent/tank/TankFrame.java" />
         <option value="$PROJECT_DIR$/src/com/tencent/tank/Explode.java" />
         <option value="$PROJECT_DIR$/src/com/tencent/tank/cor/Collider.java" />
-        <option value="$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java" />
-        <option value="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" />
         <option value="$PROJECT_DIR$/src/com/tencent/tank/Bullet.java" />
-        <option value="$PROJECT_DIR$/src/com/tencent/tank/GameModel.java" />
         <option value="$PROJECT_DIR$/src/com/tencent/tank/cor/BulletTankCollider.java" />
+        <option value="$PROJECT_DIR$/src/com/tencent/tank/GameModel.java" />
+        <option value="$PROJECT_DIR$/src/com/tencent/tank/Tank.java" />
+        <option value="$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java" />
       </list>
     </option>
   </component>
@@ -419,12 +407,12 @@
       <workItem from="1656229404882" duration="978000" />
       <workItem from="1656463270966" duration="7961000" />
       <workItem from="1656590958991" duration="22000" />
-      <workItem from="1656631601323" duration="4954000" />
+      <workItem from="1656631601323" duration="6033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12217000" />
+    <option name="totallyTimeSpent" value="13296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="1058" height="730" extended-state="0" />
@@ -439,7 +427,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.14634146" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.040069688" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="1" />
@@ -528,6 +516,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#793#794#0" expanded="true" />
             <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#4801#4802#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,18 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Tank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -851,34 +829,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/GameModel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/cor/BulletTankCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        <state relative-caret-position="176">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Tank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#4801#4802#0" expanded="true" />
+            <element signature="e#4835#4836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="108">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/cor/TankTankCollider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tencent/tank/cor/BulletTankCollider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="264">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

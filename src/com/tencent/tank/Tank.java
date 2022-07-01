@@ -15,6 +15,8 @@ public class Tank extends GameObject {
     public static final int HEIGHT = ResourceMgr.badTankU.getHeight();
     private static final int SPEED = 6;
     public int x, y;
+    //public int preX,preY;
+
     public Dir dir;
     public Group group = Group.BAD;
     public GameModel gm;
@@ -128,6 +130,9 @@ public class Tank extends GameObject {
     }
 
     public void move() {
+        // preX = x;
+        // preY = y;
+
         if (!moving) return;
 
         switch (dir) {
@@ -187,5 +192,9 @@ public class Tank extends GameObject {
 
     public void die() {
         this.living = false;
+    }
+
+    public void stop(){
+        this.moving = false;
     }
 }
