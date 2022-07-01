@@ -16,6 +16,5 @@ public class TankTankCollider implements Collider {
         }else{
             return;
         }
-
     }
 }
